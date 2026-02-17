@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                branch: 'main', git 'https://github.com/PranavTawara/restaurant_app_jenkins.git'
+                git branch: 'main', url: 'https://github.com/PranavTawara/restaurant_app_jenkins.git'
             }
         }
 
@@ -32,5 +32,6 @@ pipeline {
                 sh 'docker ps'
             }
         }
+
     }
 }
