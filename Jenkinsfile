@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'git@github.com:PranavTawara/restaurant_app_jenkins.git'
+                git 'https://github.com/PranavTawara/restaurant_app_jenkins.git'
             }
         }
 
